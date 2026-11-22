@@ -110,6 +110,12 @@ update` without a name refreshes the listing only, not the installed plugin.)
 `plugin.json` deliberately has **no `version`**, so every pushed commit counts as
 an update. If you ever add a `version`, nobody receives a change until you bump it.
 
+## How to update a local plugin install
+```
+claude plugin marketplace update toastgeraet
+claude plugin update tbd@toastgeraet
+```
+
 ## Develop
 
 - Changes go through pull requests: `/tbd:contribute` in any session collects
