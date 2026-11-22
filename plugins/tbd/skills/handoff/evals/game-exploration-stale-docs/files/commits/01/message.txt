@@ -1,0 +1,1 @@
+Scaffold: lamp, oil, taps; canvas renderer

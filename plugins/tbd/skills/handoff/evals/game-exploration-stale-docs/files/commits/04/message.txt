@@ -1,0 +1,4 @@
+Storms: 25% of nights instead of 40%, 3 oil per tap instead of 2
+
+Playtest: storms every other night were exhausting (three lost runs in a
+row), and pouring felt too slow during a storm.

@@ -1,0 +1,13 @@
+[Unit]
+Description=ferry-board departure board
+After=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/ferry-board
+EnvironmentFile=/home/pi/ferry-board/.env
+ExecStart=/home/pi/ferry-board/.venv/bin/python -m uvicorn ferry_board.app:app --host 0.0.0.0 --port 8080
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

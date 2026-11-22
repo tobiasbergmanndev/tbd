@@ -1,0 +1,9 @@
+:root { --night: #0d1420; --paper: #efe8da; --lamp: #ffd27a; }
+body { margin: 0; background: var(--night); color: var(--paper); font: 18px/1.5 system-ui, sans-serif; }
+#game { max-width: 28rem; margin: 0 auto; padding: 1rem; }
+.glow { height: 40vh; background: radial-gradient(circle at 50% 40%, var(--lamp), transparent 60%); transition: opacity 1s; }
+#game[data-lit="false"] .glow { opacity: 0.05; }
+#game[data-weather="storm"] .glow { animation: flicker 0.4s infinite alternate; }
+@keyframes flicker { from { opacity: 1; } to { opacity: 0.7; } }
+.log { list-style: none; padding: 0; }
+.pour { font: inherit; padding: 0.75rem 1.5rem; }

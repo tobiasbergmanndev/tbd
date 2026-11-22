@@ -1,0 +1,32 @@
+# sprout
+
+A watering reminder for house plants, as an offline-first PWA. Plain JavaScript modules, no
+build step, no runtime dependencies.
+
+## Where knowledge lives
+
+| File | Holds |
+| --- | --- |
+| `PRODUCT.md` | Who uses it, why, constraints, voice (impeccable's product record) |
+| `DESIGN.md` (+ `.impeccable/design.json`) | Colours, type, components (impeccable's design record) |
+
+## Rules
+
+- Offline first: nothing may need a network connection or a server.
+- No runtime dependencies without asking.
+- Commit only when asked.
+- Visual changes: take screenshots with `npm run shots` (needs the dev server) and look at
+  them before saying a change is done; show them to the user.
+
+## Layout
+
+- `src/plants.js` — plants and their watering schedule (`dueIn`, `water`).
+- `src/store.js` — plants in localStorage.
+- `src/ui.js` — the plant list.
+- `sw.js` — service worker: caches the app shell.
+- `scripts/shots.mjs` — screenshots on an emulated phone into `shots/`.
+
+## Commands
+
+- `npm run dev` — static server on port 5173.
+- `npm test` — unit tests (node:test).

@@ -1,0 +1,9 @@
+{
+  "name": "sprout",
+  "colors": {
+    "soil": { "value": "#2b2420", "role": "background" },
+    "paper": { "value": "#f3efe6", "role": "text" },
+    "leaf": { "value": "#5fae6e", "role": "accent: due and overdue plants, watered button" }
+  },
+  "typography": { "body": { "fontSize": "16px" } }
+}

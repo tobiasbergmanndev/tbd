@@ -1,0 +1,1 @@
+Unlock audio on pointerup: iOS Safari ignores touchstart
