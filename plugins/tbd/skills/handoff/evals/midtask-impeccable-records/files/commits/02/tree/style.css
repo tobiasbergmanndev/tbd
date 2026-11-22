@@ -1,0 +1,7 @@
+:root { --soil: #2b2420; --paper: #f3efe6; --leaf: #5fae6e; --warn: #e0a030; }
+body { margin: 0; background: var(--soil); color: var(--paper); font: 18px/1.5 system-ui, sans-serif; }
+.plant { display: flex; justify-content: space-between; padding: 0.75rem 1rem; }
+.plant .name { font-weight: 600; }
+/* Due and overdue plants are amber: leaf green read as "healthy" (critique 2026-11-22). */
+.plant.due { background: var(--warn); color: var(--soil); }
+.watered { font: inherit; background: var(--leaf); color: var(--soil); border: 0; padding: 0.5rem 1rem; }

@@ -1,0 +1,24 @@
+# lantern-keeper
+
+Phone-first idle game: keep a lighthouse lamp lit through the night so the ships get home.
+Plain JavaScript modules, no build step.
+
+## Rules
+
+- No dependencies in package.json: the game is plain files.
+- Save data is versioned (`src/save.js`, currently v1). Changing its shape means bumping
+  `SAVE_VERSION` and adding a migration.
+
+## Layout
+
+- `src/render.js` — draws everything into one `<canvas>`.
+- `src/lamp.js` — oil and light rules.
+- `src/storms.js` — storm nights (exploration).
+- `src/save.js` — localStorage save.
+- `scripts/check.mjs` — plays the game in an emulated phone, 9 behaviour checks.
+
+## Commands
+
+- `npm run dev` — serves the folder on port 5173.
+- `npm test` — unit tests (node:test).
+- `npm run check` — behaviour checks (needs the dev server running).

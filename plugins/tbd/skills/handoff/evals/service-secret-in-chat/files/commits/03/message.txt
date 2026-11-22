@@ -1,0 +1,1 @@
+Rate limit: keep the last board when the API answers 200 with an empty list

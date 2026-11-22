@@ -1,0 +1,4 @@
+Explore: storms (first draft)
+
+Some nights a storm comes in: oil burns twice as fast. Save v2 adds
+storms.seen; v1 saves migrate. Two new behaviour checks.

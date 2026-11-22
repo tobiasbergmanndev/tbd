@@ -1,0 +1,10 @@
+{
+  "name": "lantern-keeper",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes http-server -p 5173 -c-1 .",
+    "test": "node --test",
+    "check": "node scripts/check.mjs"
+  }
+}

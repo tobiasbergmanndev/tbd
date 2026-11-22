@@ -1,0 +1,17 @@
+schema_version: "1.1"
+name: game-exploration-stale-docs
+expected_outcome: |
+  The project's docs are brought up to date with the session and the code: CLAUDE.md no longer
+  claims save v1, a canvas renderer or 9 checks, and gives a way to run the check script
+  that can work (playwright@1.56.0 outside the repo, with a PowerShell form), noticing that the
+  session's NODE_PATH command can't load an ES-module import. The reasons
+  are recorded: canvas was dropped for DOM because text was blurry and couldn't wrap or be read
+  by screen readers (scaling by devicePixelRatio was tried); storms went from 40% to 25% of nights
+  and pouring from 2 to 3 oil per tap after a playtest. Storms are marked as an undecided
+  experiment on `explore/storms` with the next steps, and the iOS audio fix is noted as living
+  only on that branch. The user's preferences (commit only when asked, never push without
+  asking, explorations without questions) are in memory and, where they bind sessions, in
+  CLAUDE.md. No secrets or session-only temp paths are written, nothing is committed, and the
+  result is checked by a fresh reader.
+context:
+  scaffold_script: place-files.sh

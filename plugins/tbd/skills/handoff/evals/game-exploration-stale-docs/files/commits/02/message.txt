@@ -1,0 +1,4 @@
+Render with DOM instead of canvas: canvas text was blurry on phones
+
+The glow is a CSS radial gradient now. Text is real text: sharp at any
+pixel ratio, wraps by itself, readable by screen readers.

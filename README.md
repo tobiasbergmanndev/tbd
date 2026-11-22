@@ -7,9 +7,11 @@ each one grows as projects teach it something.
 | --- | --- |
 | `/tbd:scaffold` | Asks what you want to build — Android app, Godot game, both, web project, service — and sets it up from a stack that has already been proven: Godot (desktop, web, headless tests) and Expo Android (EAS builds, OTA updates from cloud sessions). |
 | `/tbd:contribute` | Looks back over the current session for anything worth adding to these skills, lets you pick, and opens a pull request here with it. |
+| `/tbd:handoff` | Before the context runs out, writes what the session learned into the project (decisions and their reasons, dead ends, status, commands, preferences), each fact in the one file where it belongs, then has a fresh agent check that the docs are enough to pick up from. |
 
-You don't need to type the commands: "start a new Godot game" or "anything from
-this session worth adding to tbd?" trigger them too.
+You don't need to type the commands: "start a new Godot game", "anything from
+this session worth adding to tbd?" or "context is filling up, save what matters"
+trigger them too.
 
 ## What `/tbd:scaffold` can set up
 
@@ -137,4 +139,5 @@ an update. If you ever add a `version`, nobody receives a change until you bump 
 plugins/tbd/.claude-plugin/plugin.json
 plugins/tbd/skills/scaffold/        SKILL.md, CONTRIBUTING.md, stacks/, reference/
 plugins/tbd/skills/contribute/      SKILL.md
+plugins/tbd/skills/handoff/         SKILL.md, references/, evals/ (test cases)
 ```

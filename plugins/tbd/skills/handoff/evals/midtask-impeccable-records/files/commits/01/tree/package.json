@@ -1,0 +1,10 @@
+{
+  "name": "sprout",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes http-server -p 5173 -c-1 .",
+    "test": "node --test",
+    "shots": "node scripts/shots.mjs"
+  }
+}

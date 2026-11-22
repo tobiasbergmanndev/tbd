@@ -1,0 +1,15 @@
+schema_version: "1.1"
+name: midtask-impeccable-records
+expected_outcome: |
+  A plan or status document for the notifications work, linked from CLAUDE.md, says which of the
+  five steps are done (1 and 2, uncommitted, naming the files), what is left of step 3 (IndexedDB
+  mirror, reading it in the service worker, registering periodic sync) and that 4 and 5 remain,
+  with the decisions and their reasons: no push server because the app is offline-first, iOS and
+  Firefox get an in-app banner, the service worker can't read localStorage, quiet hours
+  21:00-08:00, permission only after the first plant. impeccable's records are corrected in their
+  own files: PRODUCT.md's users are 60+ and read at arm's length with 18px minimum text, and
+  DESIGN.md (and its sidecar) show due plants in amber #e0a030 rather than leaf green. The
+  critique (26/40, 2026-11-22) is recorded. The uncommitted work is left untouched, nothing is
+  committed, and the result is checked by a fresh reader.
+context:
+  scaffold_script: place-files.sh
